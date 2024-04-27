@@ -162,17 +162,19 @@ h1 {
     border-bottom-right-radius: 15px;
     overflow: auto;
     font-size: 15px;
-    padding: 7px;
+    /* padding: 7px;    */
 }
 
 .grey-bottom {
     background-color: #6B6B6B;
     scrollbar-color: #4B4B4B #6B6B6B;
+    border: 7px solid #6B6B6B;
 }
 
 .black-bottom {
     background-color: #242424;
     scrollbar-color: #191919 #242424;
+    border: 7px solid #242424;
 }
 
 .song-list {
@@ -249,18 +251,12 @@ span {
 }
 
 
-/* .grey-bottom::-webkit-scrollbar-track {
+.Spotify-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.3); 
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px #6B6B6B;
 }
 
-.grey-bottom::-webkit-scrollbar {
+.Spotify-container::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px #6B6B6B;
+    -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.5); 
 }
-
-.grey-bottom::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px #4B4B4B;
-    ;
-} */
