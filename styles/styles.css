@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(270deg, #1fdc64da, #242424);
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+    font-size: 50px;
+    text-shadow: #242424e6 2px 2px 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dedede;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* First Section*/
+
+.top-container {
+    width: 320px;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.grey-top {
+    background-color: #777777;
+    border-bottom: 1px solid #6B6B6B;
+}
+
+.black-top {
+    background-color: #272727;
+    border-bottom: 1px solid #242424;
+}
+
+.playlist-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px;
+}
+
+.playlist-info img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.playlist-text h2:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.playlist-text {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.playlist-text a {
+    color: white;
+    text-decoration: none;
+}
+
+.playlist-text p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #dedede;
+}
+
+.save-playlist {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.save-playlist p:hover {
+    cursor: pointer;
+}
+
+.save-playlist img:hover {
+    width: 17%;
+    cursor: pointer;
+}
+
+.save-playlist img {
+    width: 15%;
+}
+
+#spotify-logo {
+    width: 15%;
+    align-self: end;
+}
+
+.play-controls {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.preview {
+    background-color: #dedede;
+    color: rgba(38, 38, 38, 0.838);
+    border-radius: 3px;
+    font-size: 8px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.play-ctrl-logos {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 17px;
+    display: flex;
+}
+
+.play-ctrl-logos img {
+    width: 6.5%;
+}
+
+#play-btn {
+    width: 14%;
+    position: absolute;
+    left: 80%;
+}
+
+#play-btn:hover {
+    width: 15%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.playlist-author:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Second Section*/
+
+.bottom-container {
+    width: 320px;
+    height: 190px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: auto;
+    font-size: 15px;
+    padding: 7px;
+}
+
+.grey-bottom {
+    background-color: #6B6B6B;
+    scrollbar-color: #4B4B4B #6B6B6B;
+}
+
+.black-bottom {
+    background-color: #242424;
+    scrollbar-color: #191919 #242424;
+}
+
+.song-list {
+    padding: 5px 20px;
+}
+
+.time {
+    margin-left: 35px;
+}
+
+.song-track {
+    color: #dededed6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.song-title {
+    color: white;
+}
+
+.artist-name {
+    font-size: 13px;
+}
+
+span {
+    width: 150px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.explicit {
+    display: flex;
+    gap: 10px;
+}
+
+.e {
+    width: 15px;
+    background-color: #dedede;
+    color: black;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    padding: 2px;
+    font-weight: 600;
+}
+
+.grey-bottom .song-track:hover {
+    background-color: #4B4B4B;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.song-track:hover>.song-list {
+    list-style-image: url('../images/logos/play.svg')
+}
+
+.black-bottom .song-track:hover {
+    background-color: #191919;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 5px;
+}
+
+
+/* .grey-bottom::-webkit-scrollbar-track {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #6B6B6B;
+}
+
+.grey-bottom::-webkit-scrollbar {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #6B6B6B;
+}
+
+.grey-bottom::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #4B4B4B;
+    ;
+} */
